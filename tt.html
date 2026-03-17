@@ -1,0 +1,214 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Company Section</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f6f8;
+    color: #1f2d3d;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* ===== OVERVIEW SECTION ===== */
+.company-overview {
+    display: flex;
+    gap: 40px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 6px;
+}
+
+.company-text {
+    flex: 2;
+    line-height: 1.6;
+}
+
+.company-text a {
+    color: #0070c9;
+    text-decoration: none;
+}
+
+/* ===== STATS ===== */
+.company-stats {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.company-stats::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: #e0e0e0;
+    transform: translateX(-50%);
+}
+
+.company-stats::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.stat {
+    padding: 10px;
+}
+
+.stat h3 {
+    margin: 0;
+    color: #0070c9;
+}
+
+.stat p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+/* ===== QUARTER SECTION ===== */
+.latest-quarter {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.latest-quarter h2 {
+    color: #3a5da8;
+    margin-bottom: 30px;
+}
+
+.resources {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.resources li {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.resources span {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<main>
+
+    <!-- Company Overview -->
+    <section class="company-overview">
+        
+        <article class="company-text">
+            <header>
+                <h1>About the Company</h1>
+            </header>
+
+            <p>
+                Cognizant is one of the world’s leading professional services companies,
+                helping clients become data-enabled and data-driven in the digital era.
+            </p>
+
+            <p>
+                We help businesses evolve using AI, cloud, and digital engineering to
+                unlock new value.
+            </p>
+
+            <footer>
+                <a href="#">Learn More →</a>
+            </footer>
+        </article>
+
+        <!-- Stats -->
+        <aside class="company-stats">
+            <article class="stat">
+                <h3>$21.1B</h3>
+                <p>FY25 Revenue</p>
+            </article>
+
+            <article class="stat">
+                <h3>$4.56</h3>
+                <p>FY25 GAAP EPS</p>
+            </article>
+
+            <article class="stat">
+                <h3>$2B</h3>
+                <p>Capital Returned</p>
+            </article>
+
+            <article class="stat">
+                <h3>351,600</h3>
+                <p>Employees</p>
+            </article>
+        </aside>
+
+    </section>
+
+    <!-- Latest Quarter -->
+    <section class="latest-quarter">
+        <header>
+            <h2>Latest Quarter | Q4 2025</h2>
+        </header>
+
+        <ul class="resources">
+            <li>
+                <span>📄</span>
+                <p>Press Release</p>
+            </li>
+
+            <li>
+                <span>📊</span>
+                <p>Presentation</p>
+            </li>
+
+            <li>
+                <span>📁</span>
+                <p>Infographic</p>
+            </li>
+
+            <li>
+                <span>💻</span>
+                <p>Webcast</p>
+            </li>
+
+            <li>
+                <span>📝</span>
+                <p>Transcript</p>
+            </li>
+
+            <li>
+                <span>📘</span>
+                <p>Form 10-K</p>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+</body>
+</html>
+```
